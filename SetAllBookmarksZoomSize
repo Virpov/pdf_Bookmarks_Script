@@ -1,3 +1,6 @@
+// My first JavaScript Attempt (It doesn't work)
+// I'm trying to run it in Acrobat XI Script Console
+
 function SetBmZs(bkm)
 {
 	bkm.zoomType=zoomtype.fitP;
