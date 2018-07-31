@@ -1,0 +1,15 @@
+function SetBmZs(bkm)
+{
+	bkm.zoomType=zoomtype.fitP;
+
+	if (bkm.children != null)
+	{
+		for (var i = 0; i < bkm.children.length; i++)
+		SetBmZs(bkm.children[i]);
+	}
+}
+
+console.clear(); console.show();
+console.println("Seting default Zoom for all all bookmarks in the document.");
+
+SetBmZs(this.bookmarkRoot);
